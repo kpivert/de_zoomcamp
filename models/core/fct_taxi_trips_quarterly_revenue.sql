@@ -6,6 +6,9 @@ with trips_data as (
     select 
     -- Revenue grouping 
     {{ dbt.date_trunc("month", "pickup_datetime") }} as revenue_month, 
+    {{ dbt.date_trunc("year", "pickup_datetime") }} as revenue_year, 
+    {{ dbt.date_trunc("quarter", "pickup_datetime") }} as revenue_quarter, 
+    
 
 
     service_type, 
