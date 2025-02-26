@@ -127,3 +127,8 @@ models:
       - name: payment_type_description
         data_type: string
         description: ""
+  
+  - name: fct_taxi_trips_quarterly_revenue
+    description: ""
+    columns:
+      - name: revenue_quarterly_total_amount
